@@ -29,7 +29,7 @@ def is_english(content):
 
 
 def rename_columns_snakecase(df_to_rename):
-    map_rename = {}  # saving index as id
+    map_rename = {}
     for col in df_to_rename.columns:
         map_rename[col] = col.lower().replace(' ', '_')
     df_to_rename.rename(columns=map_rename, inplace=True)
@@ -82,7 +82,7 @@ def read_connections_file():
 
 if __name__ == '__main__':
     """
-    This script reads an exported LinkedIn csv file and saves the data to a database
+    This script reads an exported LinkedIn csv files and saves the data to a database
     """
 
     # English content detection can be skipped, it runs kinda slow
