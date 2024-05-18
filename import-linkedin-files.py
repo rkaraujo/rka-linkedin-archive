@@ -86,7 +86,7 @@ if __name__ == '__main__':
     """
 
     # English content detection can be skipped, it runs kinda slow
-    parser = argparse.ArgumentParser(description='LinkedIn messages file reader')
+    parser = argparse.ArgumentParser(description='LinkedIn messages and connections file reader')
     parser.add_argument('-sed', '--skip-english-detection', action='store_true', help='Skip English detection for the content')
     args = parser.parse_args()
 
