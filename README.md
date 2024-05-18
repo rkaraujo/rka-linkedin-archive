@@ -24,7 +24,7 @@ Install requirements:
 
 Run it:
 
-`python import-messsages.py`
+`python import-linkedin-files.py`
 
 Optional argument to not detect if content is in English:
 
